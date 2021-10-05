@@ -1,11 +1,23 @@
 #!/bin/bash
 
+headcount=0
+tailcount=0
+
+for ((i=1; i<=5; i++))
+
+do
+
 random=$(($RANDOM%2))
 
 if [ $random -eq 1 ]
 then
-echo "Head";
+headcount=$(($headcount+1))
 else
-echo "Tail";
+tailcount=$(($tailcount+1))
 fi
+
+done
+
+echo "Head on : $headcount times"
+echo "Tail on : $tailcount times"
 
