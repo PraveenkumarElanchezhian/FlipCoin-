@@ -1,2 +1,2 @@
 # FlipCoin
-FlipCoinProblem
+FlipCoinSimulation
