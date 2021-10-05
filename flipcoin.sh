@@ -3,7 +3,7 @@
 headcount=0
 tailcount=0
 
-for ((i=1; i<=5; i++))
+for ((i=1; i<=21; i++))
 
 do
 
