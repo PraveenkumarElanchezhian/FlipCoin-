@@ -16,6 +16,18 @@ else
 tailcount=$(($tailcount+1))
 fi
 
+diff_one=$(($headcount-$tailcount))
+diff_two=$(($tailcount-$headcount))
+
+echo "diff_one : $diff_one"
+echo "diff_two : $diff_two"
+
+if [ $diff_one == 2 -o $diff_two == 2 ]
+then
+echo "Valid"
+break
+fi
+
 done
 
 echo "Head on : $headcount times"
